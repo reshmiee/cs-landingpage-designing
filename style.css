@@ -141,8 +141,8 @@ body {
 .hero {
   position: relative;
   background:
-    linear-gradient(to right, rgba(13,13,13,0.97) 38%, rgba(13,13,13,0.72) 65%, rgba(13,13,13,0.45) 100%),
-    url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1600&q=80&auto=format&fit=crop') center/cover no-repeat;
+    linear-gradient(to right, rgba(13,13,13,0.95) 38%, rgba(13,13,13,0.70) 62%, rgba(13,13,13,0.35) 100%),
+    url('https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=1600&q=80&auto=format&fit=crop') center/cover no-repeat;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -570,7 +570,7 @@ body {
 /* ===== HOW IT WORKS — DARK ===== */
 .how-section {
   background: var(--dark);
-  padding: 110px 0;
+  padding: 70px 0;
   position: relative;
 }
 .how-section .section-label,
@@ -644,7 +644,7 @@ body {
     #1a1a1a 98%,
     #0d0d0d 100%
   );
-  padding: 200px 0 220px;
+  padding: 70px 0 80px;
   overflow: hidden;
   position: relative;
 }
@@ -653,8 +653,8 @@ body {
 .ribbon-scene {
   position: relative;
   width: 100%;
-  height: 520px;
-  margin-top: 60px;
+  height: 380px;
+  margin-top: 36px;
 }
 
 .ribbon-svg {
@@ -731,11 +731,11 @@ body {
 }
 
 /* positions — tuned to sit on the ribbon wave */
-.rn1 { left: 4%;  top: 32px; }
-.rn2 { left: 22%; top: 220px; }
-.rn3 { left: 50%; top: 60px;  transform: translateX(-50%); }
-.rn4 { right: 20%; top: 230px; }
-.rn5 { right: 3%;  top: 50px; }
+.rn1 { left: 4%;  top: 20px; }
+.rn2 { left: 22%; top: 160px; }
+.rn3 { left: 50%; top: 40px;  transform: translateX(-50%); }
+.rn4 { right: 20%; top: 165px; }
+.rn5 { right: 3%;  top: 30px; }
 
 /* connector dots on the ribbon */
 .rnode::after {
@@ -809,7 +809,7 @@ body {
 /* ===== CTA — DARK ===== */
 .cta-section {
   background: var(--dark);
-  padding: 110px 0;
+  padding: 70px 0;
 }
 
 .cta-box {
