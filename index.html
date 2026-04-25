@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClickSafe — Browse Without Fear</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <div class="nav-logo">
+        <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+          <path d="M10 1L3 4.5V10c0 4 3.1 7.5 7 8.5 3.9-1 7-4.5 7-8.5V4.5L10 1z" fill="#E63946"/>
+        </svg>
+        ClickSafe
+      </div>
+      <nav class="nav-links">
+        <a href="features.html">Features</a>
+        <a href="how-it-works.html">How it Works</a>
+        <a href="#install">Install</a>
+        <a href="#about">About</a>
+      </nav>
+      <a href="#" class="nav-cta">Add to Chrome &rarr;</a>
+    </div>
+  </header>
+
+  <!-- HERO - DARK -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="container hero-content">
+
+      <div class="hero-left reveal">
+        <div class="hero-tag">
+          <span class="tag-dot"></span>
+          Free Browser Extension
+        </div>
+
+        <h1 class="hero-h1">
+          Browse the web<br>without <em>fear.</em>
+        </h1>
+
+        <p class="hero-desc">
+          ClickSafe watches every link, download, and tracker in real time —
+          and only speaks up when something's actually wrong.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#" class="btn-primary">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 2v8M4 7l4 4 4-4M2 12h12" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Download Free
+          </a>
+          <a href="#how" class="btn-ghost">See how it works</a>
+        </div>
+
+        <p class="hero-note">No account needed &middot; Works in seconds &middot; Chrome &amp; Edge</p>
+      </div>
+
+      <div class="hero-right reveal reveal-delay">
+        <div class="browser-mock">
+          <div class="browser-bar">
+            <div class="browser-dots">
+              <span class="dot-red"></span>
+              <span class="dot-yellow"></span>
+              <span class="dot-green"></span>
+            </div>
+            <div class="browser-url">
+              <svg width="9" height="9" viewBox="0 0 20 20" fill="none"><path d="M10 1L3 4.5V10c0 4 3.1 7.5 7 8.5 3.9-1 7-4.5 7-8.5V4.5L10 1z" fill="#E63946"/></svg>
+              https://yourbank.com/login
+            </div>
+          </div>
+          <div class="browser-body">
+            <div class="sk-line w-65"></div>
+            <div class="sk-line w-45"></div>
+            <div class="sk-line w-75"></div>
+            <div class="sk-block"></div>
+          </div>
+        </div>
+
+        <div class="hero-modal">
+          <div class="modal-icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+              <path d="M10 1L3 4.5V10c0 4 3.1 7.5 7 8.5 3.9-1 7-4.5 7-8.5V4.5L10 1z" fill="#E63946" opacity=".2"/>
+              <path d="M10 1L3 4.5V10c0 4 3.1 7.5 7 8.5 3.9-1 7-4.5 7-8.5V4.5L10 1z" stroke="#E63946" stroke-width="1.5"/>
+              <path d="M10 7v3M10 12h.01" stroke="#E63946" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="modal-text">
+            <strong>Unsafe Link Detected</strong>
+            <p>This site may contain phishing content.</p>
+          </div>
+          <div class="modal-btns">
+            <button class="modal-ignore">Ignore</button>
+            <button class="modal-block">Go Back</button>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="panel-title">Security Status</div>
+          <div class="panel-row"><span>HTTPS</span><span class="badge badge-green">Secure</span></div>
+          <div class="panel-row"><span>Trackers</span><span class="badge badge-yellow">3 found</span></div>
+          <div class="panel-row"><span>Link Risk</span><span class="badge badge-red">High</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROBLEM - LIGHT -->
+  <section class="problem-section" id="features">
+    <div class="container">
+      <div class="problem-wrapper">
+
+        <div class="problem-left">
+          <p class="section-label">&#8212; The Problem</p>
+          <h2 class="section-title">
+            The web isn't as<br>safe as it <em>looks.</em>
+          </h2>
+          <p class="section-sub">
+            You don't get hacked because you're careless.
+            Threats are engineered to look completely normal.
+          </p>
+          <div class="problem-list">
+
+            <div class="problem-item reveal">
+              <div class="problem-num">01</div>
+              <div class="problem-body">
+                <strong>Fake Links</strong>
+                <p>Designed to look real. One click hands over your credentials instantly.</p>
+              </div>
+            </div>
+
+            <div class="problem-item reveal">
+              <div class="problem-num">02</div>
+              <div class="problem-body">
+                <strong>Malicious Downloads</strong>
+                <p>One wrong file can compromise your entire machine &mdash; silently.</p>
+              </div>
+            </div>
+
+            <div class="problem-item reveal">
+              <div class="problem-num">03</div>
+              <div class="problem-body">
+                <strong>Hidden Trackers</strong>
+                <p>You didn't consent, but dozens of scripts already know who you are.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="problem-right reveal reveal-delay">
+          <img src="assets/home-page/problem.svg" alt="Threat illustration" />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS - DARK -->
+  <section class="how-section" id="how">
+    <div class="container">
+      <p class="section-label">&#8212; How ClickSafe Works</p>
+      <h2 class="section-title">Stops threats <em>before</em><br>they reach you</h2>
+      <p class="section-sub">Three-step protection. Runs invisibly while you browse.</p>
+
+      <div class="steps">
+
+        <div class="step reveal">
+          <div class="step-num">01</div>
+          <h3>Monitor</h3>
+          <p>Watches every link, script, and download request as you browse &mdash; completely silently.</p>
+        </div>
+
+        <div class="step-arrow">&#8594;</div>
+
+        <div class="step reveal">
+          <div class="step-num">02</div>
+          <h3>Detect</h3>
+          <p>Checks against 70,000+ known threats using Google Safe Browsing and local hash matching.</p>
+        </div>
+
+        <div class="step-arrow">&#8594;</div>
+
+        <div class="step reveal">
+          <div class="step-num">03</div>
+          <h3>Warn</h3>
+          <p>Only alerts you when something is actually dangerous. No false alarms, no noise.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES - LIGHT with RIBBON -->
+  <section class="features-section" id="features-ribbon">
+    <div class="container">
+      <p class="section-label">&#8212; Features</p>
+      <h2 class="section-title">Everything working quietly<br>to keep you <em>safe</em></h2>
+      <p class="section-sub">Passive protection. Active results. No interruptions unless it matters.</p>
+    </div>
+
+    <!-- RIBBON SCENE -->
+    <div class="ribbon-scene">
+
+      <!-- SVG ribbon wave -->
+      <svg class="ribbon-svg" viewBox="0 0 1400 480" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="rg" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%"   stop-color="#E63946"/>
+            <stop offset="45%"  stop-color="#C1121F"/>
+            <stop offset="75%"  stop-color="#E63946"/>
+            <stop offset="100%" stop-color="#ff6b6b"/>
+          </linearGradient>
+          <!-- text path runs along the center of the ribbon -->
+          <path id="tp" d="M-20 260 Q 180 130 400 210 Q 600 285 700 255 Q 800 225 1000 280 Q 1200 335 1420 210"/>
+        </defs>
+        <!-- ribbon body -->
+        <path d="M-20 220 Q 180 90 400 170 Q 600 245 700 215 Q 800 185 1000 240 Q 1200 295 1420 170
+                 L 1420 300 Q 1200 425 1000 370 Q 800 315 700 345 Q 600 375 400 300 Q 180 220 -20 350 Z"
+              fill="url(#rg)" opacity="0.92"/>
+        <!-- subtle highlight stripe -->
+        <path d="M-20 228 Q 180 98 400 178 Q 600 253 700 223 Q 800 193 1000 248 Q 1200 303 1420 178"
+              fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="6"/>
+        <!-- scrolling text on ribbon -->
+        <text font-family="Space Mono, monospace" font-size="11" fill="rgba(255,255,255,0.38)" letter-spacing="5">
+          <textPath href="#tp" startOffset="0%">
+            LINK PROTECTION &nbsp;&bull;&nbsp; DOWNLOAD SCANNING &nbsp;&bull;&nbsp; TRACKER DETECTION &nbsp;&bull;&nbsp; HTTPS MONITORING &nbsp;&bull;&nbsp; DARK PATTERNS &nbsp;&bull;&nbsp; COOKIE ANALYSIS &nbsp;&bull;&nbsp; LINK PROTECTION &nbsp;&bull;&nbsp; DOWNLOAD SCANNING &nbsp;&bull;&nbsp;
+          </textPath>
+        </text>
+      </svg>
+
+      <!-- Feature nodes positioned along the ribbon -->
+      <div class="rnode rn1">
+        <div class="rnode-bubble">
+          <div class="rnode-icon">
+            <svg width="22" height="22" viewBox="0 0 20 20" fill="none"><path d="M10 1L3 4.5V10c0 4 3.1 7.5 7 8.5 3.9-1 7-4.5 7-8.5V4.5L10 1z" stroke="#E63946" stroke-width="1.5"/></svg>
+          </div>
+          <strong>Link Protection</strong>
+          <p>Every URL checked before you land.</p>
+        </div>
+      </div>
+
+      <div class="rnode rn2">
+        <div class="rnode-bubble">
+          <div class="rnode-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 4v5c0 5-3 9-7 10C8 21 5 17 5 12V7l7-4z" stroke="#E63946" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="#E63946" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <strong>Download Scanning</strong>
+          <p>Malware hash-checked before disk.</p>
+        </div>
+      </div>
+
+      <div class="rnode rn3 rn-center">
+        <div class="rnode-bubble rnode-featured">
+          <div class="rnode-icon">
+            <svg width="28" height="28" viewBox="0 0 20 20" fill="none"><path d="M10 1L3 4.5V10c0 4 3.1 7.5 7 8.5 3.9-1 7-4.5 7-8.5V4.5L10 1z" fill="rgba(230,57,70,0.12)" stroke="#E63946" stroke-width="1.5"/></svg>
+          </div>
+          <strong>Core Shield</strong>
+          <p>4 layers of real-time protection running silently in the background.</p>
+        </div>
+      </div>
+
+      <div class="rnode rn4">
+        <div class="rnode-bubble">
+          <div class="rnode-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="11" width="18" height="11" rx="2" stroke="#E63946" stroke-width="1.5"/><path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="#E63946" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <strong>HTTPS Monitor</strong>
+          <p>Warns when encryption drops.</p>
+        </div>
+      </div>
+
+      <div class="rnode rn5">
+        <div class="rnode-bubble">
+          <div class="rnode-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#E63946" stroke-width="1.5"/><path d="M8 12s1 2 4 2 4-2 4-2M9 9h.01M15 9h.01" stroke="#E63946" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <strong>Tracker Block</strong>
+          <p>70k+ scripts stopped cold.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA - DARK -->
+  <section class="cta-section" id="install">
+    <div class="container">
+      <div class="cta-box reveal">
+        <div class="cta-glow"></div>
+        <p class="section-label cta-label">&#8212; Free to install</p>
+        <h2 class="section-title cta-title">
+          Start browsing safely<br>in under <em>60 seconds.</em>
+        </h2>
+        <p class="cta-sub">No account. No setup wizard. Just install and go.</p>
+        <a href="#" class="btn-primary btn-lg">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 2v8M4 7l4 4 4-4M2 12h12" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Add to Chrome &mdash; It's Free
+        </a>
+        <p class="cta-note">Chrome Web Store &middot; Reviewed by Google &middot; Open Source</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER - DARK -->
+  <footer class="footer" id="about">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo footer-logo">
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M10 1L3 4.5V10c0 4 3.1 7.5 7 8.5 3.9-1 7-4.5 7-8.5V4.5L10 1z" fill="#E63946"/></svg>
+          ClickSafe
+        </div>
+        <p>Real-time browser security for everyone.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">GitHub</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 ClickSafe. Built with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
