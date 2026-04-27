@@ -143,7 +143,6 @@ body {
   background:
     linear-gradient(to right, rgba(13,13,13,0.95) 38%, rgba(13,13,13,0.70) 62%, rgba(13,13,13,0.35) 100%),
     url('https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=1600&q=80&auto=format&fit=crop') center/cover no-repeat;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -166,7 +165,7 @@ body {
   align-items: center;
   gap: 64px;
   padding-top: 60px;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
   width: 100%;
 }
 
@@ -493,25 +492,17 @@ body {
 
 /* ===== PROBLEM SECTION — LIGHT ===== */
 .problem-section {
-  background: linear-gradient(
-    to bottom,
-    #0d0d0d 0%,
-    #1a1a1a 2%,
-    #888 5%,
-    #ffffff 9%,
-    #ffffff 91%,
-    #888 95%,
-    #1a1a1a 98%,
-    #0d0d0d 100%
-  );
-  padding: 160px 0 160px;
+  background: #ffffff;
+  padding: 80px 0;
   position: relative;
 }
 
 .problem-wrapper {
   display: flex;
   align-items: center;
-  gap: 80px;
+  gap: 16px;
+  max-width: 860px;
+  margin: 0 auto 0 80px;
 }
 
 .problem-left { flex: 1.1; }
@@ -570,7 +561,7 @@ body {
 /* ===== HOW IT WORKS — DARK ===== */
 .how-section {
   background: var(--dark);
-  padding: 70px 0;
+  padding: 60px 0;
   position: relative;
 }
 .how-section .section-label,
@@ -633,17 +624,7 @@ body {
 
 /* ===== FEATURES SECTION — RIBBON ===== */
 .features-section {
-  background: linear-gradient(
-    to bottom,
-    #0d0d0d 0%,
-    #1a1a1a 2%,
-    #888 5%,
-    #f8f8f8 9%,
-    #f8f8f8 91%,
-    #888 95%,
-    #1a1a1a 98%,
-    #0d0d0d 100%
-  );
+  background: #f8f8f8;
   padding: 70px 0 80px;
   overflow: hidden;
   position: relative;
@@ -653,8 +634,18 @@ body {
 .ribbon-scene {
   position: relative;
   width: 100%;
-  height: 380px;
+  height: 500px;
   margin-top: 36px;
+  overflow: visible;
+}
+
+#ribbon-canvas {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .ribbon-svg {
@@ -670,13 +661,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 2;
+  z-index: 10;
   animation: floatNode 5s ease-in-out infinite;
 }
 .rnode:nth-child(2)  { animation-delay: 0.6s; }
 .rnode:nth-child(3)  { animation-delay: 1.2s; }
 .rnode:nth-child(4)  { animation-delay: 0.3s; }
 .rnode:nth-child(5)  { animation-delay: 0.9s; }
+
+@keyframes floatNode3 {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
 
 @keyframes floatNode {
   0%, 100% { transform: translateY(0); }
@@ -730,12 +726,9 @@ body {
   line-height: 1.5;
 }
 
-/* positions — tuned to sit on the ribbon wave */
-.rn1 { left: 4%;  top: 20px; }
-.rn2 { left: 22%; top: 160px; }
-.rn3 { left: 50%; top: 40px;  transform: translateX(-50%); }
-.rn4 { right: 20%; top: 165px; }
-.rn5 { right: 3%;  top: 30px; }
+/* positions — tuned to sit on the canvas ribbon wave */
+/* rnode absolute positions now unused — cards ride on .ribbon-track */
+.rn1, .rn2, .rn3, .rn4, .rn5 { display: none; }
 
 /* connector dots on the ribbon */
 .rnode::after {
@@ -809,7 +802,7 @@ body {
 /* ===== CTA — DARK ===== */
 .cta-section {
   background: var(--dark);
-  padding: 70px 0;
+  padding: 60px 0;
 }
 
 .cta-box {
